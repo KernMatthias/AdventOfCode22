@@ -66,12 +66,12 @@ fn main() {
                         },
                     }
                 })
-                .collect::<BinaryHeap<u32>>()
+                .collect::<BinaryHeap<u32>>() // insert into sorted collection
                 .into_iter()
                 .take(3)
                 .sum();
 
-            println!("{}", calories);
+            println!("2. combined calories of 3 elves with most caleries: {}", calories);
         }
         Err(e) => {
             panic!("could not open file: {}", e);
